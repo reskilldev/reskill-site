@@ -1,0 +1,17 @@
+<%
+function render(body) { %>
+  <%- include('../layout', { title, body }) %>
+<% } %>
+
+<% render(`
+  <section class="hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have questions or ready to enroll? Reach out and we’ll help you take the next step.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="mailto:info@reskill.co.za">Email us</a>
+        <a class="btn btn-secondary" href="tel:+27XXXXXXXXX">Call us</a>
+      </div>
+    </div>
+  </section>
+`) %>

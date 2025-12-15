@@ -1,0 +1,13 @@
+<%
+function render(body) { %>
+  <%- include('../layout', { title, body }) %>
+<% } %>
+
+<% render(`
+  <section class="hero">
+    <div class="container">
+      <h1>About Reskill</h1>
+      <p>We bridge education and employment through real-world training that drives personal and social change.</p>
+    </div>
+  </section>
+`) %>

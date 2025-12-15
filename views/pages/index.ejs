@@ -1,0 +1,18 @@
+<%
+// Simple layout usage with a local render helper
+function render(body) { %>
+  <%- include('../layout', { title, body }) %>
+<% } %>
+
+<% render(`
+  <section class="hero">
+    <div class="container">
+      <h1>Develop the skills that move you forward</h1>
+      <p>Gain practical skills to create the change you want in your life and community.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="/programs">Explore Programs</a>
+        <a class="btn btn-secondary" href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+`) %>

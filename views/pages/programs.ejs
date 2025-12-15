@@ -1,0 +1,67 @@
+<%
+function render(body) { %>
+  <%- include('../layout', { title, body }) %>
+<% } %>
+
+<% render(`
+  <section class="hero">
+    <div class="container">
+      <h1>Explore Programs</h1>
+      <p>Discover practical training designed to build skills for work, study, and community impact.</p>
+    </div>
+  </section>
+
+  <section class="programs">
+    <div class="container">
+      <h2>💻 Computer Literacy Program</h2>
+      <p>Master essential digital tools: Office 365, Google Workspace, calendars, cloud storage, communication, and cybersecurity.</p>
+
+      <!-- Skills Cards -->
+      <h3>What You’ll Learn</h3>
+      <div class="card-grid">
+        <div class="card"><h3>🖥️ Core Computer Skills</h3><p>OS navigation, file management, hardware/software basics.</p></div>
+        <div class="card"><h3>📊 Microsoft Office 365</h3><p>Word, Excel, PowerPoint, Outlook for productivity.</p></div>
+        <div class="card"><h3>📣 Google Workspace</h3><p>Docs, Sheets, Slides, Gmail for collaboration.</p></div>
+        <div class="card"><h3>🗓️ Calendars</h3><p>Organize schedules with Outlook & Google Calendar.</p></div>
+        <div class="card"><h3>☁️ Cloud Storage</h3><p>Store and share files with OneDrive & Google Drive.</p></div>
+        <div class="card"><h3>📧 Communication</h3><p>Email etiquette & inbox management.</p></div>
+        <div class="card"><h3>🔒 Cybersecurity</h3><p>Safe online practices to protect your identity.</p></div>
+      </div>
+
+      <!-- Outcomes Cards -->
+      <h3>Program Outcomes</h3>
+      <div class="card-grid">
+        <div class="card"><h3>Confidence</h3><p>Operate a computer with ease.</p></div>
+        <div class="card"><h3>Productivity</h3><p>Create documents, spreadsheets, and presentations.</p></div>
+        <div class="card"><h3>Organization</h3><p>Manage schedules and collaborate online.</p></div>
+        <div class="card"><h3>Professional Communication</h3><p>Write and manage emails effectively.</p></div>
+        <div class="card"><h3>Digital Safety</h3><p>Apply safe digital habits daily.</p></div>
+      </div>
+
+      <!-- Careers Cards -->
+      <h3>Career Opportunities</h3>
+      <div class="card-grid">
+        <div class="card"><h3>🗂️ Data Capturer</h3><p>Accurate entry and management of information.</p></div>
+        <div class="card"><h3>📞 Virtual Assistant</h3><p>Support businesses remotely with admin tasks.</p></div>
+        <div class="card"><h3>🧾 Office Administrator</h3><p>Keep offices organized and efficient.</p></div>
+        <div class="card"><h3>💻 Customer Support</h3><p>Assist clients with digital tools and services.</p></div>
+        <div class="card"><h3>🌐 Freelancer</h3><p>Offer digital services independently.</p></div>
+      </div>
+
+      <!-- Audience Cards -->
+      <h3>Who This Program Is For</h3>
+      <div class="card-grid">
+        <div class="card"><h3>🎓 Students</h3><p>High school & tertiary learners building digital skills.</p></div>
+        <div class="card"><h3>🚀 Entrepreneurs</h3><p>Small business owners needing digital tools.</p></div>
+        <div class="card"><h3>👩‍🏫 Adult Learners</h3><p>Community members seeking practical skills.</p></div>
+        <div class="card"><h3>🧾 Entry-Level Workers</h3><p>Office staff needing computer literacy.</p></div>
+        <div class="card"><h3>🌐 Freelancers</h3><p>Remote workers offering digital services.</p></div>
+      </div>
+
+      <div class="cta-group">
+        <a class="btn btn-primary" href="/contact">Enroll Now</a>
+        <a class="btn btn-secondary" href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+`) %>
