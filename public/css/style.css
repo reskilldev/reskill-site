@@ -192,27 +192,36 @@ section { padding: var(--space-5) 0; }
   color: #444;
 }
 
-/* === Section Backgrounds === */
+/* === Section Backgrounds (applied to container) === */
 .section-light {
   background: #f9f9f9;
-  padding: 60px 0;
+  padding: 60px 40px;
+  border-radius: 8px;
 }
 
 .section-white {
   background: #ffffff;
-  padding: 60px 0;
+  padding: 60px 40px;
+  border-radius: 8px;
+}
+
+/* === Container Width === */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* === About Grid === */
 .about-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 40px;
   align-items: center;
 }
 
 .about-text h1 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 16px;
 }
 
@@ -223,8 +232,9 @@ section { padding: var(--space-5) 0; }
   color: #444;
 }
 
+/* === Image Styling === */
 .about-image img {
-  max-width: 320px;
+  max-width: 280px;
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -233,18 +243,31 @@ section { padding: var(--space-5) 0; }
 
 /* === Section Headings === */
 section h2 {
-  font-size: 26px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 8px;
-  margin-bottom: 24px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+  color: #2c3e50;
 }
 
 /* === Paragraphs === */
 section p {
   font-size: 17px;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: #444;
+}
+
+/* === Quote Block === */
+.founder-quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #333;
+  border-left: 4px solid #ccc;
+  padding-left: 20px;
+  margin: 32px 0;
+  line-height: 1.6;
+  max-width: 720px;
 }
 
 /* === Card Grid === */
@@ -287,7 +310,7 @@ section p {
   }
 
   .about-text h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .about-image {
