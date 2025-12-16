@@ -192,59 +192,74 @@ section { padding: var(--space-5) 0; }
   color: #444;
 }
 
-/* === About Page === */
-.about-hero {
-  padding: var(--space-5) 0;
-  background: var(--grey-050);
+/* === Section Backgrounds === */
+.section-light {
+  background: #f9f9f9;
+  padding: 60px 0;
 }
 
+.section-white {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+/* === About Grid === */
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: var(--space-4);
+  gap: 40px;
   align-items: center;
 }
 
 .about-text h1 {
   font-size: 40px;
-  margin-bottom: var(--space-2);
+  margin-bottom: 16px;
 }
 
 .about-text p {
-  font-size: 18px;
-  margin-bottom: var(--space-2);
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 16px;
   color: #444;
 }
 
 .about-image img {
+  max-width: 320px;
   width: 100%;
-  border-radius: var(--radius);
+  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 0 auto;
 }
 
+/* === Section Headings === */
 section h2 {
-  font-size: 28px;
-  margin-bottom: var(--space-2);
+  font-size: 26px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
 }
 
+/* === Paragraphs === */
 section p {
-  font-size: 18px;
-  margin-bottom: var(--space-2);
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 16px;
   color: #444;
 }
 
+/* === Card Grid === */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-3);
-  margin-top: var(--space-3);
+  gap: 24px;
+  margin-top: 24px;
 }
 
 .card {
-  background: var(--white);
-  border: 1px solid var(--grey-300);
-  border-radius: var(--radius);
-  padding: var(--space-3);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -254,6 +269,17 @@ section p {
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -265,17 +291,6 @@ section p {
   }
 
   .about-image {
-    margin-top: var(--space-3);
+    margin-top: 24px;
   }
-}
-
-/* === Alternating Section Backgrounds === */
-.section-light {
-  background: var(--grey-050);
-  padding: var(--space-5) 0;
-}
-
-.section-white {
-  background: var(--white);
-  padding: var(--space-5) 0;
 }
