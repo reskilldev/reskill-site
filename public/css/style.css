@@ -191,3 +191,48 @@ section { padding: var(--space-5) 0; }
   font-size: 16px;
   color: #444;
 }
+
+/* === About Section === */
+.about-hero {
+  padding: var(--space-5) 0;
+  background: var(--grey-050);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.about-text h1 {
+  font-size: 40px;
+  margin-bottom: var(--space-2);
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: var(--space-2);
+  color: #444;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 32px;
+  }
+
+  .about-image {
+    margin-top: var(--space-3);
+  }
+}

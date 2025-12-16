@@ -4,10 +4,30 @@ function render(body) { %>
 <% } %>
 
 <% render(`
-  <section class="hero">
+  <section class="about-hero">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h1>About Reskill</h1>
+        <p>Founded by <strong>Nkosivumile Chiya</strong>, Reskill is a social impact initiative that transforms education into employability. We equip learners with practical digital skills that unlock real-world opportunity.</p>
+        <p>With 20+ years in development, strategy, and education, Nkosivumile built Reskill to empower communities through accessible, outcome-driven training.</p>
+      </div>
+      <div class="about-image">
+        <img src="/images/graduation.jpg" alt="Nkosivumile Chiya graduation photo">
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
     <div class="container">
-      <h1>About Reskill</h1>
-      <p>We bridge education and employment through real-world training that drives personal and social change.</p>
+      <h2>Our Mission</h2>
+      <p>We believe education should lead to empowerment. Reskill equips learners with digital tools, communication skills, and real-world workflows that unlock opportunity—whether in the workplace, in business, or in life.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-group">
+      <a class="btn btn-primary" href="/programs">Explore Programs</a>
+      <a class="btn btn-secondary" href="/contact">Contact Us</a>
     </div>
   </section>
 `) %>
